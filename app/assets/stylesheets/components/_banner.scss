@@ -1,0 +1,18 @@
+.bg-img {
+  height: calc(100vh - 10vh);
+  background-image: asset-url('jenga.jpg');
+  // background-repeat: no-repeat;
+  // background-attachment: fixed;
+  // background-position: 30% 70%;
+  // display: flex;
+  // justify-content:center;
+  // flex-direction: column;
+  background-size: cover;
+  // background-position: center;
+  // align-items: center;
+  //  color: black;
+
+  font-family: Source Sans Pro;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  font-size: 80%;
+}

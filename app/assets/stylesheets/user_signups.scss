@@ -1,0 +1,35 @@
+// Place all the styles related to the UserSignups controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+
+/* global styles ----------------------------- */
+
+h1{
+  color: white;
+}
+
+h2, h3{
+  //color: $accent_color;
+  color: $purple;
+}
+
+a{
+  color: $link-color;
+}
+
+p{
+  margin-bottom: 0;
+}
+
+body {
+  background-color: white;
+}
