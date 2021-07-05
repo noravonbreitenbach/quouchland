@@ -1,26 +1,77 @@
 
-<div class="bg-img">
-<h1>Signup to Express Your Interest!</h1>
+<div class="banner">
+  <div class="container">
+    <h1>quouch</h1>
+      <p>no more overnight stays with horny single men</p>
+      <p>couchsurfing from a female & queer perspective</p>
+  </div>
+</div>
 
-<%= form_for @user_signup do |f| %>
+<div class="flex-container">
+    <div class="about-img">
+    </div>
+     <div class="about">
+       <div class="container">
+    <h1>Couch</h1>
+     <h1>surfing</h1>
+    <h2>without the annoying risk</h2>
+    <h2>of again ending up at a </h2>
+    <h3>lonely horny weird guys home</h3>
+    <h1>can be wonderful.</h1>
+    <br>
+  </div>
+  </div>
+</div>
+</div>
+
+<div class="banner2">
+  <div class="container">
+    <h1><a href="#">Get to the tech part of it!</a></h1>
+  </div>
+</div>
+
+<div class="flex-container">
+  <div class="about2">
+    <h1>Sex</h1>
+    <h2>is a driving force of many things people do</h2>
+    <h2>including offering travelers their home. </h2>
+    <h2>But if there was a platform only for those rather suffering under that driving force</h2>
+    <h2>than enjoying it mutually, this can open up new doors for free and exciting traveling.</h2>
+    <h2>Meeting like-minded locals and travelers with a female and queer perspective in a queer world.</h2>
+  </div>
+   <div class="about-img2">
+  </div>
+</div>
+
+<div class="container position">
+  <div class="sign-up">
+   <%= form_for @user_signup do |f| %>
   <% if @user_signup.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@user_signup.errors.count, "error") %> prohibited your registration from being completed:</h2>
-
       <ul>
       <% @user_signup.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>
-    </div>
+       </div>
   <% end %>
+  </div>
+  <div class="card">
+       <div class="field">
+          <%= f.label :email %><br>
+          <%= f.text_field :email %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      <% end %>
+  </div>
+ </div>
 
-  <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
-</div>
+  <footer class="footer">
+    <div class="container">
+      <p>©Quouch 2021</p>
+    </div>
+  </footer>
+

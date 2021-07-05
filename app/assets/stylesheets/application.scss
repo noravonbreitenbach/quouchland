@@ -1,0 +1,38 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+/* global styles ----------------------------- */
+
+// h1{
+//   color: white;
+//   font-size: 240px;
+// }
+
+// h2, h3{
+//   //color: $accent_color;
+//   color: white;
+// }
+
+// a{
+//   color: $link-color;
+// }
+
+// p{
+//   margin-bottom: 0;
+// }
+
+// body {
+//   background-color: white;
+// }
