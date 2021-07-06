@@ -3,16 +3,29 @@
 //   // padding:60px 40px 20px 40px;
 // }
 
+.main-container {
+  display:flex;
+
+}
+
+.cards-container {
+  //flex-grow: 1;
+  display:flex;
+  flex-wrap: wrap;
+  //justify-content: space-between;
+}
+
 .card {
+  flex: 0 0 50%;
   width:300px;
   text-align:center;
   border-radius: 30px;
   padding: 30px;
-   display: flex;
-  justify-content:center;
+   //display: flex;
+  //justify-content:center;
   // flex-direction: column;
-  background-size: cover;
-  background-position: center;
+  // background-size: cover;
+  // background-position: center;
 }
 
 // .container .position {
@@ -36,6 +49,7 @@
 
 .about {
   //width: 100%;
+  flex: 0 0 50%;
   text-align:left;
   background-color:black;
   color: white;
@@ -46,40 +60,41 @@
 }
 
 .about h1 {
-    font-size: 150px;
-    padding-left: 30px;
+  font-size: 150px;
+  padding-left: 30px;
   }
 .about h3 {
-    font-size: 50px;
-    padding-left: 30px;
+  font-size: 50px;
+  padding-left: 30px;
   }
 .about h2 {
-    font-size: 40px;
-    padding-left: 30px;
+  font-size: 40px;
+  padding-left: 30px;
   }
 
 
 .about-img {
-    background-image: asset-url('horny-viktor-kronos.jpeg');
+  flex: 0 0 50%;
+  background-image: asset-url('horny-viktor-kronos.jpeg');
 
   //background-image: linear-gradient(to right, rgba(156,255,1,0.2)  0%, rgba(0,0,0,1) 100%), asset-url('horny-viktor-kronos.jpeg');
   // height:100vh;
   // width: 100%;
   background-repeat: no-repeat;
   position: relative;
-width: 927px;
-height: 1215px;
-background-color: #E16416;
-
-border-color: #9D1C33;
+  width: 927px;
+  height: 1215px;
+  background-color: #E16416;
+  border-color: #9D1C33;
 }
 
 .about-img2 {
   background-image: asset-url('people.jpeg');
   //background-image: linear-gradient(to right, rgba(156,255,1,0.2)  0%, rgba(0,0,0,1) 100%), asset-url('horny-viktor-kronos.jpeg');
- width: 100vw;
-height: 100vh;
-position:absolute;
+  width: 100vw;
+  height: 100vh;
+  position:absolute;
+  background-position:center;
   background-repeat: no-repeat;
 }
 
@@ -102,12 +117,12 @@ position:absolute;
 // //   object-position:50% 40%;
 // // }
 
-// // .center {
-// //   position:absolute;
-// //   top:30%;
-// //   left: 0;
-// //   right: 0;
-// //   margin-left: auto;
-// //   margin-right: auto;
-// //   width: 200px;
-// // }
+.center {
+  position:absolute;
+  top:30%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
